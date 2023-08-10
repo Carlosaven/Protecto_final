@@ -1,0 +1,191 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #010e0e;
+  color: aliceblue;
+}
+
+/* Contenedor principal */
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #010e0e;
+  color: aliceblue;
+}
+
+
+
+.nav-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #a12e9b;
+  cursor: pointer;
+}
+
+/* Navegación */
+.nav-center {
+  display: flex;
+  align-items: center;
+}
+
+.pestanas {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.pestanas li {
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.pestanas li:hover {
+  transform: scale(1.1);
+}
+
+.pestanas li a img {
+  border: 0;
+  max-width: 100%;
+  height: 50px;
+}
+
+/* Imagen circular */
+.imagen-circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  margin: 0 auto;
+}
+
+
+.imagen-circular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .imagen-circular {
+    width: 100px;
+    height: 100px;
+  }
+ /* Ajustes para el footer en pantallas pequeñas */
+ footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  display: block;
+  margin: 10px auto;
+}
+
+footer a img {
+  max-width: 50px; /* Ajustar el tamaño de las imágenes */
+  height: auto;
+}
+iframe {
+  width: 100%; /* Ancho del iframe */
+  height: auto; /* Altura del iframe */
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+.logo {
+  width: 100px;
+}
+}
+
+
+/* Media Query para pantallas grandes */
+@media screen and (min-width: 601px) {
+.imagen-circular {
+  width: 150px;
+  height: 150px;
+}
+
+ /* Ajustes para el footer en pantallas grandes */
+ footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+footer a {
+  margin: 0 10px;
+}
+iframe {
+  width: 80%; /* Ancho del iframe */
+  height: 500px; /* Altura del iframe */
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.logo {
+  width: 200px;
+}
+}
+/* Secciones */
+.inicio,
+.contactos {
+  background-color: #a12e9b;
+  text-align: center;
+  padding: 40px;
+  
+}
+
+/* Estilos para la sección de contactos */
+.contactos p {
+  background-color: rgba(244, 238, 238, 0.937); /* Color de fondo con transparencia */
+  padding: 10px; /* Espacio de relleno */
+  border-radius: 5px; /* Borde redondeado */
+  margin: 10px 0; /* Espacio entre los párrafos */
+  
+}
+
+/* Botón Suscribirse */
+.suscripcion {
+  background-color: #a12e9b;
+  font-family: 'Aleo', sans-serif;
+  font-size: 24px;
+  color: hsl(240, 15%, 84%);
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  font-family: 'fantasy';
+  color: azure;
+  border: none;
+  background-color: rgb(96, 4, 83);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Contenedor del footer */
+footer {
+  background-color: #010e0e;
+  text-align: center; /* Centra los enlaces horizontalmente */
+  padding: 20px;
+}
+
+/* Enlaces del footer */
+footer a {
+  margin: 0 10px; /* Espaciado entre los enlaces */
+}

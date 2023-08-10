@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Avendaño</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="nav-center">
+                <img src="img/Logo.jpg" class="logo" alt="logo"/>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav>
+                <ul class="pestanas">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <div id="clima" style="text-align: center;"></div>
+    </header>
+
+    <main>
+        <section class="imagen-circular">
+            <img src="img/Yo2.jpg" alt="Carlos Avendaño">
+        </section>
+        <section id="inicio" class="inicio">
+            <h1>Bienvenidos a mi espacio profesional</h1>
+            <p>Criminólogo egresado de la Universidad de los Andes en el año 2008</p>
+            <p>Magister en Ciencias Sociales por la Universidad Nacional de General Sarmiento (UNGS). Estudiante del Doctorado en Ciencias Sociales de la Universidad Nacional de General Sarmiento (UNGS)</p>
+            <p>En la actualidad soy investigador del Centro de Altos Estudios en Ciencias Sociales de la Universidad Abierta Interamerivana (UAI)</p>
+            <p>Director la Diplomatura en Criminología Aplicada de la UAI y codirector la Diplomatura en Delitos Informáticos y Ciberseguridad de la UAI</p>
+            <p>Secretario del Consejo Superior de la UAI.</p>
+            <br>
+            <p>También tengo formación en Análisis de Datos usando librerías de Python</p>
+            <p>El siguiente mapa fue generado con los datos de Robos en CABA durante el año 2021, se muestra como ejemplo de algunos proyectos ejecurados</p>
+            <iframe src="img/map_Robo.html" ></iframe>
+        </section>
+        
+        <section id="contactos" class="contactos">
+            <h1>Información de contacto y otros enlaces de interés</h1>
+            <h2>Descargar mi CV</h2>
+            <button class="btn success" onclick="abrirPDF()">Descargar CV</button>
+            <h2>En los siguientes enlaces pueden acceder a información relevante sobre espacios vinculados a la Criminología y Ciencias Sociales.</h2>
+            <div class="enlaces">
+                <p><a href="https://drive.google.com/file/d/1YhkYeA0t7DgnyRpGvonZA5f7B26uVw_7/view">Libro: Un Virus Sin Vacuna</a></p>
+                <p><a href="https://lnk.bio/go?d=https%3A%2F%2Ft.me%2Fcriminologica&hash=90b3c7022a65edfbbb5747d4e71b4cfd&id=2773706&ext=-1347105&timezone=America%2FNew_York&type=1">Grupo de Telegram sobre Criminología y Ciencias Sociales</a></p>
+                <p><a href="https://lnk.bio/go?d=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyKpaOc_-I6o&hash=17e68425deac280e0abedfcb8c4a2dd0&id=2983194&ext=-1347105&timezone=America%2FNew_York&type=1">Grabación de la Jornada Internacional de Criminología de la UAI</a></p>
+                <p><a href="https://www.youtube.com/watch?app=desktop&v=2TkW_nTMg0M&feature=youtu.be&ab_channel=Venedigitalradio">Relaciones sexoafectivas después de los 40 en Psicoencuentro2.0</a></p>
+              </div>
+            <div id="suscripcion">
+                <button class="btn success" onclick="mostrarFormulario()">Suscribirse</button>
+                <form id="formulario" style="display: none;">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <script>
+            function mostrarFormulario() {
+                document.getElementById("formulario").style.display = "block";
+            }
+        </script>
+        <script src="js/main.js"></script>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="nav-center">
+                <a href="https://www.instagram.com/criminologiando/" target="new"><img src="https://static.uai.edu.ar/newsletters/img/AA4167.jpg" alt="instagram"></a>
+                <a href="https://www.facebook.com/avendac/" target="new"><img src="https://static.uai.edu.ar/newsletters/img/AA4169.jpg" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/criminologo-carlos-avenda%C3%B1o/" target="new"><img src="https://static.uai.edu.ar/newsletters/img/AA4170.jpg" alt="facebook"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
